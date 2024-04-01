@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+
+public class Arraylist2 {
+
+	public static void main(String[] args) {
+		
+
+	    // # 1 Create an ArrayList to store strings
+
+		ArrayList<Integer> arnumber = new ArrayList<Integer>();
+		arnumber.add(14);
+		arnumber.add(7);
+		arnumber.add(39);
+		arnumber.add(40);
+
+		
+		
+	    // # 2 For Loop for iterating ArrayList
+	      
+		
+	      for (int i = 0; i < arnumber.size(); i++) { 		      
+	          System.out.println(arnumber.get(i)); 		
+	      }   		
+		  
+	   // #3 Get the size of the ArrayList
+	      
+	      System.out.println("# 3 Getting size of Arraylist "+arnumber.size());
+	      
+	      
+	   // #4  Remove an element from the ArrayList  
+		 
+	      System.out.println("Before removing elements from Arraylist"+arnumber);
+		
+	      arnumber.remove(3);
+	      
+	      System.out.println("# 4 After removing '40'element from arraylist index of "+arnumber);
+	      
+	   // #5 Check if the ArrayList contains a specific element  
+	      
+	     
+	      
+		  System.out.println("# 5 Verify'40'element is present in the Arraylist or not if present it will give true :"+arnumber.contains(40));
+		  
+	   // #6 Clear all elements from the ArrayList
+		  
+		  arnumber.clear();
+		 
+		  System.out.println("# 6 Clearing all elements from Arraylist"+arnumber);
+		 
+	}
+
+}
